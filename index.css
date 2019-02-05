@@ -59,7 +59,16 @@ margin: auto;
 
 #questionAnswerForm{
  margin: 0% 25% 0 25%;
+ max-width:650px;
 }
+
+@media screen and (max-width:768px){
+  #questionAnswerForm{
+    margin: 0% 5% 0 5%;
+   } 
+}
+
+
 #questionAnswerForm p{
   margin-top: 20px;
   font-size: 20px;
@@ -170,6 +179,26 @@ margin: auto;
   font-size: 20px;
   text-align: center;
 }
+
+#questionAnswerForm .answers label{
+  transition:.3s all;
+  cursor: pointer;
+  display:block;
+  margin:auto;
+  background-color: #0E5342;
+  padding:20px;
+   margin-bottom:1em;
+   margin-top: 20px;
+   /* width:450px; */
+   color: #F5F5F5;
+
+}
+
+#questionAnswerForm .answers label:hover{
+  background: #7F5A83;
+}
+
+
 @media screen and (min-width:700px){
   .home img{
   display:flex;
@@ -222,23 +251,7 @@ margin:auto;
   
 }
 
-#questionAnswerForm .answers label{
-  transition:.3s all;
-  cursor: pointer;
-  display:block;
-  margin:auto;
-  background-color: #0E5342;
-  padding:20px;
-   margin-bottom:1em;
-   margin-top: 20px;
-   width:450px;
-   color: #F5F5F5;
 
-}
-
-#questionAnswerForm .answers label:hover{
-  background: #7F5A83;
-}
 
 .answers span{
   padding: 20px;
@@ -332,5 +345,7 @@ margin: auto;
   font-size: 30px;
   text-align: center;
 }
+
+
 
 }
