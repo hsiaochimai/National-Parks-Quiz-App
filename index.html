@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>National Parks Quiz App</title>
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"/> 
+    
+  </head>
+  <body>
+    <div id="wrapper">
+<header role="banner">
+  <div class="home"
+  <a href="index.html">
+  <img src= "https://cdn3.iconfinder.com/data/icons/travelling-icon-set-ii-part/800/mountains-128.png" alt="mountain icon"/>
+  </a>
+  </div>
+  <div class= "questionScore"> 
+    <ul>
+      <li>Question:
+      <span id="questionNumber"></span>/ 
+        <span id="questionCount"></span>
+      </li>
+      <li>Score: 
+        <span class="score">0</span>
+        </li> 
+    </ul>
+  </div>
+</header>
+<main role="main">
+  <div class="startQuiz">
+    <h1>Are you ready to test your knowledge of National Parks?</h1>
+    <button type="button" id="startButton">Let's get started!</button>
+    </div>
+    <div id="questionAnswerFeedback"></div>
+    <div id="questionAnswerForm"></div>
+    <div id="finalResult"></div>
+    </main>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="datastore.js"></script>
+  <script src="index.js"></script>
+  </body>
+</html>
